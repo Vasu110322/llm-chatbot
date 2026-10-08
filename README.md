@@ -32,8 +32,4 @@ When all four AgentGuard credentials are set, the backend initializes AgentGuard
 
 The prompt-injection, toxicity, and ML-based PII detectors require Python 3.13 or earlier; the `guardrails` extra is installed automatically on those versions. On Python 3.14, tracing and the SDK's non-ML guardrails remain available, but those ML detectors are not installed.
 
-`AGENTGUARD_CAPTURE_CONTENT=true` records prompts and responses in traces. Set it to `false` in `.env` if chat content may contain sensitive information or should not be retained.
-
-## Checks
-
-Run `npm run lint`, `npm run build`, and `python -m compileall backend` before deploying.
+`AGENTGUARD_CAPTURE_CONTENT=true` records prompts and responses in traces. Set it to `false` in `.env` if chat content may contain sensitive information or should not be
