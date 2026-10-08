@@ -50,7 +50,7 @@ class ChatRequest(BaseModel):
 
 @app.post("/api/chat")
 async def chat(request: ChatRequest) -> JSONResponse:
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = os.getenv("OPENAI_API_KEY") 
     if not api_key:
         return JSONResponse(
             status_code=503,
