@@ -87,5 +87,5 @@ async def chat(request: ChatRequest) -> JSONResponse:
             status_code=502,
             content={"error": "The model could not respond just now. Check your API key and try again."},
         )
-    finally:
+    finally
         await client.close()
